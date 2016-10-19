@@ -2,7 +2,7 @@
 
 ### Description:
 #---------------------
-# Calculate swath-profile values perpendicular to a straight baseline. The 
+# Calculate swath-profile values perpendicular to a *straight* baseline. The 
 # baseline is generated between two user-defined points (X|Y), see argument 
 # 'coords'. The distance between samples and the number of samples can be 
 # specified, see arguments 'k' and 'dist'. Values of the swath-profile are 
@@ -33,6 +33,7 @@
 swathR <- function(coords, raster, k, dist, crs, method) {
     library(sp)
     library(rgeos)
+    library(raster)
     message('Initializing ...')
     # set default method:
     if (missing(method)) {
