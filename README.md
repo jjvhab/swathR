@@ -1,12 +1,12 @@
 # swathR
-generalized swath-profiles in R
+generalized swath-profiles with R
 
 # v.0.4 - README
 
 ---------------------
 ### Description:
 
-Calculate swath-profile values perpendicular to a straight baseline. The baseline is generated between two user-defined points (X|Y), see argument 'coords'. The distance between samples and the number of samples can be specified, see arguments 'k' and 'dist'. Values of the swath-profile are extracted from a given raster file, see argument 'raster'. CRS of raster and points have to be identical.
+Calculate swath-profile values perpendicular to a *straight* baseline. The baseline is generated between two user-defined points (X|Y), see argument 'coords'. The distance between samples and the number of samples can be specified, see arguments 'k' and 'dist'. Values of the swath-profile are extracted from a given raster file, see argument 'raster'. CRS of raster and points have to be identical.
 
 ---------------------
 ### Arguments:
