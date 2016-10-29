@@ -24,3 +24,10 @@ Calculate swath-profile values perpendicular to a *straight* baseline. The basel
 ### Required packages:
 
 'sp', 'rgeos', 'raster'
+
+---------------------
+### MIT License
+
+cite via:
+
+![](https://zenodo.org/badge/DOI/10.5281/zenodo.163769.svg)
