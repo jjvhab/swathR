@@ -1,4 +1,4 @@
-# swathR v.0.4 by Vincent Haburaj
+# swathR v1.0 by Vincent Haburaj
 
 ### Description:
 #---------------------
