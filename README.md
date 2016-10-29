@@ -30,4 +30,4 @@ Calculate swath-profile values perpendicular to a *straight* baseline. The basel
 
 cite via:
 
-![](https://zenodo.org/badge/DOI/10.5281/zenodo.163769.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.163769.svg)](https://doi.org/10.5281/zenodo.163769)
