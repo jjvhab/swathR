@@ -1,7 +1,7 @@
 # swathR
 generalized swath-profiles with R
 
-# v.0.4 - README
+# v.1.0 - README
 
 ---------------------
 ### Description:
