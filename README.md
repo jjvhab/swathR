@@ -1,7 +1,7 @@
 # swathR
 generalized swath-profiles with R
 
-# v.1.0 - README
+# v.1.0.1 - README
 
 ---------------------
 ### Description:
@@ -21,9 +21,22 @@ Calculate swath-profile values perpendicular to a *straight* baseline. The basel
 + method = string; method for extraction of raw data, see extract() from package 'raster'; default value: 'bilinear'
 
 ---------------------
-### Required packages:
+### Required packages & References:
 
-'sp', 'rgeos', 'raster'
+**rgeos:**
+Bivand, R., Rundel, C., Pebesma, E., & Hufthammer, K. O. (2015). rgeos: Interface to Geometry 
+ Engine - Open Source (GEOS) (Version 0.3-15). 
+ Retrieved from https://cran.r-project.org/web/packages/rgeos/index.html
+
+**raster:**
+Hijmans, R. J., Etten, J. van, Cheng, J., Mattiuzzi, M., Sumner, M., Greenberg, J. A., … 
+ Shortridge, A. (2015). raster: Geographic Data Analysis and Modeling (Version 2.5-2). 
+ Retrieved from https://cran.r-project.org/web/packages/raster/index.html
+
+**sp:**
+Pebesma, E., Bivand, R., Rowlingson, B., Gomez-Rubio, V., Hijmans, R., Sumner, M., … O’Brien,
+ J. (2015). sp: Classes and Methods for Spatial Data (Version 1.2-1). 
+ Retrieved from https://cran.r-project.org/web/packages/sp/index.html
 
 ---------------------
 ### MIT License
