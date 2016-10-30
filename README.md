@@ -41,6 +41,4 @@ Pebesma, E., Bivand, R., Rowlingson, B., Gomez-Rubio, V., Hijmans, R., Sumner, M
 ---------------------
 ### MIT License
 
-cite via:
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.163776.svg)](https://doi.org/10.5281/zenodo.163776)
+cite via DOI on [Zenodo](https://zenodo.org/search?page=1&size=20&q=swathR)
