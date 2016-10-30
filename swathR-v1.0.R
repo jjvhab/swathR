@@ -1,13 +1,13 @@
-# swathR v1.0 by Vincent Haburaj
+# swathR v1.0.1 by V.Haburaj
 
 ### Description:
 #---------------------
-# Calculate swath-profile values perpendicular to a *straight* baseline. The 
+# Calculate swath-profile values perpendicular to a straight baseline. The 
 # baseline is generated between two user-defined points (X|Y), see argument 
 # 'coords'. The distance between samples and the number of samples can be 
 # specified, see arguments 'k' and 'dist'. Values of the swath-profile are 
 # extracted from a given raster file, see argument 'raster'. CRS of raster 
-# and points have to be identical.
+# and points have to be the same.
 
 ### Arguments:
 #---------------------
@@ -28,7 +28,7 @@
 # install.packages('rgeos', dependencies=T)
 # install.packages('raster', dependencies=T)
 
-### Function::
+### Function:
 #---------------------
 swathR <- function(coords, raster, k, dist, crs, method) {
     library(sp)
@@ -41,6 +41,7 @@ swathR <- function(coords, raster, k, dist, crs, method) {
     }
     # create SpatialPoints from coords:
     spt <- SpatialPoints(coords, proj4string = CRS(crs))
+    # get slope of baseline:
     m <- (ymin(spt[1]) - ymin(spt[2])) / (xmin(spt[1]) - xmin(spt[2]))
     # get slope of normal function:
     m1 <- - (1/m)
@@ -105,4 +106,19 @@ swathR <- function(coords, raster, k, dist, crs, method) {
 } 
 
 
+### References:
+#---------------------
+# citation('rgeos')
+# Bivand, R., Rundel, C., Pebesma, E., & Hufthammer, K. O. (2015). rgeos: Interface to Geometry 
+# Engine - Open Source (GEOS) (Version 0.3-15). 
+# Retrieved from https://cran.r-project.org/web/packages/rgeos/index.html
 
+# citation('raster')
+# Hijmans, R. J., Etten, J. van, Cheng, J., Mattiuzzi, M., Sumner, M., Greenberg, J. A., … 
+# Shortridge, A. (2015). raster: Geographic Data Analysis and Modeling (Version 2.5-2). 
+# Retrieved from https://cran.r-project.org/web/packages/raster/index.html
+
+# citation('sp')        
+# Pebesma, E., Bivand, R., Rowlingson, B., Gomez-Rubio, V., Hijmans, R., Sumner, M., … O’Brien,
+# J. (2015). sp: Classes and Methods for Spatial Data (Version 1.2-1). 
+# Retrieved from https://cran.r-project.org/web/packages/sp/index.html
